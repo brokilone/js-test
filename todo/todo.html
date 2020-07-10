@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="todo.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+    <title>TODO</title>
+</head>
+<body>
+    <div class="outer">
+    <div class="todoList">
+        <h2>Список дел</h2>
+        <div class="list">
+            <p class="list">Список пуст...</p>
+        </div>
+    </div>
+    <div class="todoList">
+        <h2>Добавить новое дело</h2>
+        <div class="form">
+            <label>* Название <br>
+                <input type="text" name="name" alt="name" id="name"
+                       placeholder="Купить лошадь">
+            </label>
+            <br>
+            <label>* Описание <br>
+                <textarea>По цене|
+                </textarea>
+            </label>
+            <br>
+            <button id="addButton">Добавить дело</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

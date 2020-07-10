@@ -1,0 +1,113 @@
+body{
+    background-color: #ebebeb;
+    font-family: Arial, sans-serif;
+    padding: 83px 160px 83px 160px;
+    margin: 0 auto;
+}
+h2{
+
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 27px;
+}
+
+p.list, input, textarea, #addButton {
+    font-size: 16px;
+    width: 87%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background-color: #ebebeb;
+    border: 1px solid rgb(235,235,235);
+}
+p.list{
+    padding-top: 33px;
+}
+textarea{
+    height: 200px;
+    resize: none;
+    font-size: 16px !important;
+    font-family: Arial, sans-serif !important;
+    font-weight: normal !important;
+}
+input, textarea, #addButton{
+    padding: 10px;
+}
+#addButton{
+    color: #ffffff;
+    background-color: #2174fd;
+    border: 1px solid #2174fd;
+    width: 200px;
+    height: 50px;
+}
+.outer{
+    width: 100%;
+    padding: 0 15% 0 10%;
+}
+p.list,label, .itemDesc{
+    color: #8993ad;
+}
+label, .itemDesc{
+    font-size: 12px;
+}
+.todoList{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+div.list{
+    padding-top: 0px;
+    padding-right: 40px;
+    width: 80%;
+}
+div.form{
+    padding-top: 50px;
+    padding-left: 40px;
+    background-color: #f9f9f9;
+    width: 80%;
+    height: 450px;
+}
+li{
+    list-style-type: none;
+    width: 100%;
+    min-height: 40px;
+    font-size: 16px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+p.item-name{
+    padding: 10px;
+    margin: 0;
+    width: auto;
+    display: inline-block;
+}
+.itemDesc{
+    border-top: 1px solid #ebebeb;
+    padding: 10px;
+    width: 100%;
+    min-height: 60px;
+    vertical-align: top;
+}
+.delete{
+    background-image: url("button.jpg");
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    vertical-align: center;
+    border: none;
+}
+.arrow{
+    background-image: url("Стрелка.png");
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    float: right;
+    border: none;
+}
+.hide{
+    display: none;
+}
+
+
