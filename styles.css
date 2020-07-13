@@ -355,4 +355,16 @@ hr{
 
 }
 
+.converter{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #91919f;
+    font-size: 12px;
+}
+#eur{
+    background-image: url("img/euro.png");
+    background-repeat: no-repeat;
+    padding-left: 18px;
+}
+
 

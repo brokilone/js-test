@@ -1,4 +1,15 @@
 $(function () {
+
+    $.get('http://data.fixer.io/api/latest', {
+        'access_key' : '61772550a6af7ca871d9c4e4c6359649',
+         'base' : 'EUR',
+         'symbols': 'RUB'
+    }, function (response) {
+        console.log(response);
+        $('#eur').text(response.base + ' ' + response.rates.RUB.toFixed(2));
+    });
+
+
     // left: 37, up: 38, right: 39, down: 40,
     // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
     var keys = {37: 1, 38: 1, 39: 1, 40: 1};
@@ -38,16 +49,7 @@ $(function () {
         window.removeEventListener('touchmove', preventDefault, wheelOpt);
         window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
     }
-    // function disableScroll(){
-    //     $('html, body').on('mousewheel', function () {
-    //         $(this).css('overflow', 'hidden');
-    //     });
-    // }
-    // function enableScroll(){
-    //     $('html, body').on('mousewheel', function () {
-    //         $(this).css('overflow', 'auto');
-    //     });
-    // }
+
     $('#changebutton')
         .css({
             'margin-left': '20px',
@@ -69,5 +71,7 @@ $(function () {
                 height: 0
             }, 400);
         }
-    })
+    });
+
+
 });
