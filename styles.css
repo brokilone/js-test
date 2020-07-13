@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-width: 1000px;
+
     font-family: Arial;
 }
 h3{
@@ -335,6 +335,24 @@ hr{
     position: absolute;
     top: 280px;
     left: 540px;
+}
+#popup-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/bg-opacity.png");
+    z-index: 10;
+    display: none;
+}
+
+#popup{
+    width: 0;
+
+    height: 0;
+    background-color: white;
+    padding: 20px;
+    margin: 40px auto;
+
 }
 
 
