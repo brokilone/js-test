@@ -1,5 +1,7 @@
 $(function () {
-   $('#addButton').click(function () {
+
+
+   $('#addButton').on('click', function () {
 
        var innerText = $('input#name').val();
         if (innerText.length < 1) {
@@ -18,9 +20,41 @@ $(function () {
             button.addClass('delete');
             newPoint.append(button);
 
+           $('.delete').on('click', function () {
+               $(this).closest('li').remove();
+           });
+
             var button2 = $('<button></button>');
             button2.addClass('arrow');
+            button2.css({
+                transition: 'all 0.5s',
+                transform: 'rotate(0deg)'
+            });
             newPoint.append(button2);
+
+       $('.arrow').on('click', function () {
+
+
+
+           if ( $(this).css('transform') == 'matrix(1, 0, 0, 1, 0, 0)'){
+               $(this).css({
+                   transition: 'all 0.5s',
+                   transform: 'rotate(90deg)'
+               });
+               var needItem = $(this).parents('li');
+               var needBlock = $(needItem).children('.itemDesc').first();
+               needBlock.fadeOut(500);
+           }
+           else  {
+               $(this).css({
+                   transition: 'all 0.5s',
+                   transform: 'rotate(0deg)'
+               });
+               var needItem = $(this).parents('li');
+               var needBlock = $(needItem).children('.itemDesc').first();
+               needBlock.fadeIn(500);
+           }
+       });
 
             var description = $('textarea').val();
             var desc = $('<p></p>');
@@ -29,20 +63,8 @@ $(function () {
             desc.text(description);
             newPoint.append(desc);
             $('textarea').val(" ");
-       $('.delete').click(function () {
-           $(this).closest('li').remove();
-       });
-       $('.arrow').click(function() {
-        if ($('.itemDesc').css("display") != "none") {
-          $('.itemDesc').fadeOut(400);
-            $(this).css({transition:'all 0.5s', 
-              transform:'rotate(90deg'});
-          } else {
-            $('.itemDesc').fadeIn(400);
-            $(this).css({transition:'all 0.5s', 
-              transform:'rotate(0deg'});
-          }
-       });
+
+
 
    });
 
