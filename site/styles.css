@@ -1,0 +1,271 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+}
+
+.fixed-container {
+    max-width: 1190px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+h1{
+    padding-top: 245px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 80px;
+    font-weight: 900;
+    color: #1f1f24;
+}
+#info{
+    font-size: 25px;
+    color: #8993ad;
+    margin-top: 30px;
+}
+#header{
+    height: 706px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+#my_photo{
+    height: 100%;
+    width: 40%;
+    background: url("me.png") no-repeat;
+    background-size: auto 500px;
+    background-position: right;
+}
+.info-button{
+    margin-top: 50px;
+    width: 270px;
+    height: 60px;
+    color: #ffffff;
+    background-color: #ff4e2e;
+    border: none;
+    font-size: 18px;
+}
+#central{
+    height: 1510px;
+}
+#central span img{
+    border-radius: 50%;
+    box-shadow: -5px 0 10px 0 #cdccd0;
+}
+#price{
+    height: 360px;
+    background: linear-gradient(90deg, #ff8f5a, #ff2f96);
+}
+#price div.fixed-container{
+    padding: 85px 115px;
+}
+.big-div{
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+}
+#note{
+    color: white;
+    margin-top: 35px;
+}
+#ham, #call {
+    display: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px !important;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav span {
+    font-weight: 700;
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+nav li a.active{
+    text-decoration: underline #fc557c;
+    color: #fc557c;
+}
+nav button {
+    width: 207px;
+    height: 45px;
+    color: #f53f4f;
+    border: 1px solid #f53f4f;
+    background: white;
+    font-size: 16px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1095px) {
+    h1{
+        font-size: 54px;
+        padding-top: 250px;
+    }
+    #ham {
+        display: inline-block;
+    }
+    nav ul{
+    display: none;
+    }
+    .info-button{
+        margin-top: 50px;
+        width: 320px;
+        height: 70px;
+    }
+
+    #price div.fixed-container{
+        padding: 85px 20px;
+    }
+    #note{
+        color: white;
+        margin-top: 40px;
+    }
+    #central{
+        height: 1140px;
+    }
+}
+
+@media (max-width: 780px) {
+    h1{
+        font-size: 40px;
+        padding-top: 200px;
+    }
+    #header{
+        justify-content: flex-start;
+        height: 500px;
+    }
+    #info{
+        font-size: 20px;
+    }
+    #my_photo {
+        width: 50%;
+        background-size: auto 400px;
+    }
+    .big-div {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 680px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .info-button {
+        width: 225px;
+        height: 50px;
+    }
+
+    #my_photo {
+        width: 40%;
+        background-size: auto 300px;
+    }
+    nav button{
+        width: 170px;
+        height: 38px;
+    }
+    nav span{
+        font-size: 18px;
+    }
+
+}
+@media (max-width: 550px) {
+    h1 {
+        padding-top: 0;
+        font-size: 30px;
+    }
+    span img{
+        width: 25px;
+    }
+
+    #call{
+        display: inline-block;
+    }
+    nav button{
+        display: none;
+    }
+
+    nav span{
+        margin: 0;
+    }
+    .contacts{
+        width: 78%;
+        justify-content: space-between;
+    }
+    #info {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+    #header {
+        flex-wrap: wrap-reverse;
+        height: auto;
+        align-content: flex-start;
+        text-align: center;
+    }
+
+    #my_photo {
+        height: 400px;
+        width: 100%;
+        background-size: contain;
+    }
+
+    #about {
+        height: 185px;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .info-button {
+        margin-top: 30px;
+        width: 280px;
+        height: 57px;
+        font-size: 16px;
+    }
+
+    #central {
+        height: 800px;
+    }
+
+    #price {
+        max-height: 440px;
+        background: linear-gradient(0deg, #ff8f5a, #ff2f96);
+        padding: 50px 20px;
+        box-sizing: border-box;
+    }
+
+    .big-div {
+        font-size: 28px;
+    }
+
+    #note {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    #price div.fixed-container {
+        padding: 0;
+    }
+}
+

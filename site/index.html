@@ -1,9 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<title>Test page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <title>Landing page</title>
 </head>
 <body>
-	<h1>Test header</h1>
+<header>
+
+    <nav class="fixed-container">
+        <span id="ham"><img src="ham.png" alt="menu"/> </span>
+        <ul>
+            <li><a>Услуги</a></li>
+            <li><a class="active">Портфолио</a></li>
+            <li><a>Стоимость</a></li>
+        </ul>
+        <div class="contacts">
+            <span>+7 (919) 704-46-21</span>
+            <button type="button">Заказать звонок</button>
+            <span id="call"><img src="phone.png" alt="call"/> </span>
+        </div>
+    </nav>
+    <div class="fixed-container" id="header">
+        <div id="about">
+            <h1>Ксения Ушакова</h1>
+            <div id="info">Иду с нуля до&nbsp;fullstack-разработчика</div>
+            <button type="button" class="info-button">Узнать больше</button>
+        </div>
+        <div id="my_photo"></div>
+    </div>
+</header>
+<main>
+    <section id="central">
+        <div class="fixed-container">
+        <span>
+            <img src="arrow.png">
+        </span>
+        </div>
+    </section>
+    <section id="price">
+        <div class="fixed-container">
+            <div class="big-div">Адаптивная верстка под&nbsp;все устройства и&nbsp;любые браузеры
+                для&nbsp;сайтов и&nbsp;веб-приложений.*
+            </div>
+            <div id="note">* Сроки и&nbsp;стоимость рассчитываются индивидуально и&nbsp;зависят от&nbsp;сложности
+                задач.
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>
